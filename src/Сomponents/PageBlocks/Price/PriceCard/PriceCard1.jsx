@@ -11,7 +11,7 @@ const SecondaryList = styled.ul`
   display: ${props => props.index > 3 ? "block" : "none"};
 `;
 
-const PriceCard = (props) => {
+const PriceCard1 = (props) => {
     const [windowSize, setWindowSize] = useState(getWindowSize());
     let windowWidth = window.screen.width;
     useEffect(() => {
@@ -28,26 +28,30 @@ const PriceCard = (props) => {
 
     return (
 
-        <div className="price-card pb10">
+        <div className="price-card">
             <div>
                 <p>{props.title_month}</p>
             </div>
             <div>
                 <MainList index={props.index}>
-                    <li>Онлайн-бронирование</li>
-                    <li>Отзывы и рейтинги</li>
-                    <li>Конвертация валют</li>
-                    <li>Мультиязычное меню</li>
+                    <li>Размещение на маркетплейсе </li>
+                    {/* <li>Онлайн-бронирование</li> */}
+                    {/* <li>Отзывы и рейтинги</li> */}
+                    {/* <li>Конвертация валют</li> */}
+                    {/* <li>Мультиязычное меню</li> */}
                 </MainList>
-                <SecondaryList index={props.index}>
+                {/* <SecondaryList index={props.index}>
+                    <li>Размещение на маркетплейсе</li>
+                    <li>Онлайн-бронирование</li>
+                    <li>CRM-система</li>
                     <li>Фунционал пакета Basic</li>
                     <li>CRM-система</li>
-                </SecondaryList>
+                </SecondaryList> */}
             </div>
             <div>
                 <p>
                     <span className="price-card-strikethrough">
-                            {props.title_strikethrough}{props.title_strikethrough === "" ? "" : <span className={windowWidth <= 768 ? css.inActiveSpan : css.activeSpan}> тенге</span>}
+                            {props.title_strikethrough}{props.title_strikethrough === "" ? "" : <span className={windowWidth <= 768 ? css.inActiveSpan : css.activeSpan}></span>}
                     </span> {windowWidth <= 768 ? "" : <br/>} {props.title_price}
                 </p>
             </div>
@@ -55,10 +59,13 @@ const PriceCard = (props) => {
     );
 };
 
+
+
+
 function getWindowSize() {
     const {innerWidth, innerHeight} = window;
     return {innerWidth, innerHeight};
 }
 
 
-export default PriceCard;
+export default PriceCard1;
