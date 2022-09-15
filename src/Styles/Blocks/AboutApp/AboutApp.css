@@ -18,13 +18,13 @@
   margin: 0 auto;
 }
 .about-app-first-text p:nth-child(1) {
-  font-size: 1.728rem;
+  font-size: 1.65rem;
   font-weight: 900;
   margin-bottom: 0;
 }
 
 .about-app-first-text p:nth-child(2) {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .about-app-second-text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0 0 20px;
 }
@@ -176,7 +176,7 @@
   0 1px 1px #BE123C, 
   -1px 0 1px #BE123C, 
   0 -1px 1px #BE123C;
-  margin-left: 150px;
+  margin-left: 75px;
 }
 
 @media (min-width: 1400px) {
@@ -191,7 +191,9 @@
 }
 
 @media (max-width: 1200px) {
-
+  .class{
+    margin-left: 55px;
+  }
   .about-app-first-text,
   .about-app-second-text {
     width: 90%;
@@ -200,6 +202,9 @@
 }
 
 @media (max-width: 992px) {
+  .class{
+    margin-left: 30px;
+  }
   .about-app-block {
     grid-template-columns: 1fr;
   }
@@ -222,6 +227,9 @@
 }
 
 @media (max-width: 768px) {
+  .class{
+    margin-left: 30px;
+  }
   .about-app-block {
     row-gap: 0;
   }
@@ -237,6 +245,9 @@
 }
 
 @media (max-width: 576px) {
+  .class{
+    margin-left: 5%;
+  }
   .about-app-download {
     align-items: start;
   }
@@ -246,6 +257,7 @@
   }
 }
 @media (max-width: 320px) {
+  
   .aboutApp__button {
     display: grid;
     grid-template-columns: 1fr 0.262fr;

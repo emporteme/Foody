@@ -32,7 +32,7 @@ const AboutApp = () => {
                                     type="filled"
                                     color={red}
                                     gap="40px"
-                                    fs="1.2rem"
+                                    fs="1.1rem"
                                     fw="700"
                                     letter="1.5px"
                                 />

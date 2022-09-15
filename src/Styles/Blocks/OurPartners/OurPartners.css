@@ -4,7 +4,9 @@
   row-gap: 50px;
 }
 .class{
-  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 .our-partners-group {
   overflow: hidden;
